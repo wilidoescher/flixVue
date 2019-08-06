@@ -1,0 +1,56 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Terror",
+      "filmes": [
+        {
+          "id": 1,
+          "titulo": "It: A Coisa",
+          "imagem": "https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/i/it-a-coisa-0817-1400x800-2.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "It: A Coisa",
+          "imagem": "https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/i/it-a-coisa-0817-1400x800-2.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "It: A Coisa",
+          "imagem": "https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/i/it-a-coisa-0817-1400x800-2.jpg"
+        },
+        {
+          "id": 4,
+          "titulo": "It: A Coisa",
+          "imagem": "https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/i/it-a-coisa-0817-1400x800-2.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "titulo": "Comédia",
+      "filmes": [
+        {
+          "id": 1,
+          "titulo": "Click",
+          "imagem": "https://macmagazine.uol.com.br/wp-content/uploads/2013/09/19-click.jpg"
+        },
+        {
+          "id": 2,
+          "titulo": "Click",
+          "imagem": "https://macmagazine.uol.com.br/wp-content/uploads/2013/09/19-click.jpg"
+        },
+        {
+          "id": 3,
+          "titulo": "Click",
+          "imagem": "https://macmagazine.uol.com.br/wp-content/uploads/2013/09/19-click.jpg"
+        },
+        {
+          "id": 4,
+          "titulo": "Click",
+          "imagem": "https://macmagazine.uol.com.br/wp-content/uploads/2013/09/19-click.jpg"
+        }
+      ]
+    }
+  ]
+}

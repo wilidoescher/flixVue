@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Instrodução ao Vue JS</title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+
+		<div id="app">
+			
+			<ca-titulo titulo="Formulários"></ca-titulo>
+
+			<p>Texto: {{texto}}</p>
+			<p>
+				<input type="text" v-model="texto">
+			</p>
+
+			<p>Textarea: {{textarea}}</p>
+			<p style="white-space: pre-line">{{textarea}}</p>
+			<p>
+				<textarea v-model="textarea" rows="8" cols="80"></textarea>
+			</p>
+
+			<p>Checkbox:</p>
+			<input type="checkbox" id="aceitaTermos" v-model="termos">
+			<label for="aceitaTermos">{{termos}}</label>
+
+			<p>Multiple Checkboxes: {{notificacoes}}</p>
+			<p>
+				<input type="checkbox" id="receberEmail" value="email" v-model="notificacoes">
+				<label for="receberEmail">Receber e-mail</label>
+				<input type="checkbox" id="receberSMS" value="sms" v-model="notificacoes">
+				<label for="receberSMS">Receber SMS</label>
+				<input type="checkbox" id="receberTel" value="tel" v-model="notificacoes">
+				<label for="receberTel">Receber Ligação</label>
+			</p>
+			<p>Radio: {{sexo}}</p>
+			<p>
+				
+				<input type="radio" id="masculino" value="M" v-model="sexo">
+				<label for="masculino">Masculino</label>
+				<input type="radio" id="feminino" value="F" v-model="sexo">
+				<label for="feminino">Feminino</label>
+
+			</p>
+			<p>Select {{ano}}</p>
+			<p>
+				<select v-model="ano">
+					<option disabled value="">Escolha o ano</option>
+					<option value="2017">Ano 2017</option>
+					<option value="2018">Ano 2018</option>
+					<option value="2019">Ano 2019</option>
+				</select>
+			</p>
+			
+			<p>Multiple Selects {{cores}}</p>
+			<p>
+				<select multiple="" v-model="cores">
+					<option disabled value="">Escolha as cores</option>
+					<option>Azul</option>
+					<option>Verde</option>
+					<option>Vermelho</option>
+
+
+
+
+				</select>
+
+			</p>
+
+			<p>Lazy: {{busca}}</p>
+				<p><input type="text" v-model.lazy="busca">
+			</p>
+
+			<p>Number: {{idade}} - tipo: {{typeof idade}}</p>
+			<p>
+				<input type="number" v-model.number="idade">
+
+			</p>
+			
+
+		</div>		
+
+		<script type="text/javascript">
+
+			Vue.component('ca-titulo', {
+				props: ['titulo'],
+				template:'<h2>{{ titulo }}</h2>'
+			});
+
+			
+				
+				var app = new Vue({
+					el:"#app",
+					data:{
+						texto:'',
+						textarea:'',
+						termos:false,
+						notificacoes:[],
+						sexo:null,
+						ano:null,
+						cores:['Azul','Verde','Vermelho'],
+						busca:'',
+						idade:null
+					}
+				
+
+			});
+
+		</script>
+
+	</body>
+</html>
